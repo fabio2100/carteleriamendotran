@@ -1,5 +1,6 @@
 import { InfoOutlined } from "@mui/icons-material"
 import { DirectionsBus } from "@mui/icons-material"
+import Fila from "./Fila"
 
 export default function Cartel(){
     return(
@@ -32,7 +33,10 @@ export default function Cartel(){
                     </div>
                 </div>  
             </div>
-            <div className='row'>fila</div>
+            <div className='row'>
+                <Fila />
+                <Fila />
+                </div>
     </div>
     )
 }

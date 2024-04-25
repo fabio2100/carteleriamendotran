@@ -1,9 +1,13 @@
+:root{
+  --main-red: #f00b0b;
+}
+
 
 .main{
   width: 400px !important;
   margin: 2em !important;
   margin-bottom: 0 !important;
-  border-left: 1em solid red;
+  border-left: 1em solid var(--main-red);
   width: 40px;
   margin: 2em;
 }
@@ -31,9 +35,14 @@
 }
 
 .superior{
-  background-color: red;
+  background-color: var(--main-red);
 }
 
 .logoSuperior{
   color: white;
+}
+
+.filaBus{
+  border-right: 2em solid #0c0e86;
+  background-color: #c9c9c9;
 }
