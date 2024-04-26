@@ -7,7 +7,9 @@ export default function Fila({color,bondis}){
     })
 
     return(<>
+        <div className="row">
         {lineas}
+        </div>
         </>
         
     )
