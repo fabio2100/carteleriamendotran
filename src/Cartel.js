@@ -34,8 +34,8 @@ export default function Cartel(){
                 </div>  
             </div>
             <div className='row'>
-                <Fila />
-                <Fila />
+                <Fila color={7} bondis={[729,730]}/> 
+                <Fila color={4} bondis={[400]}/>
                 </div>
     </div>
     )
