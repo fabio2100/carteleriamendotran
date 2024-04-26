@@ -2,9 +2,9 @@ import { InfoOutlined } from "@mui/icons-material"
 import { DirectionsBus } from "@mui/icons-material"
 import Fila from "./Fila"
 
-export default function Cartel(){
+export default function Cartel({invertido}){
     return(
-        <div className='container main'>
+        <div className={invertido ? 'container mainInvertido' : 'container main'}>
             <div className='row superior'>
                 <div className="container">
                     <div className="row">
@@ -35,8 +35,8 @@ export default function Cartel(){
             </div>
             <div className='row'>
                 <div className="containerRows container">
-                <Fila color={'#b6a50f'} bondis={[[400,['TRAPICHE','DORREGO','lugar1','lugar2','lugar3']]]}/>
-                <Fila color={'#0c0e86'} bondis={[[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']],[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']]]}/> 
+                <Fila color={'#b6a50f'} invertido={invertido} bondis={[[400,['TRAPICHE','DORREGO','lugar1','lugar2','lugar3']]]}/>
+                <Fila color={'#0c0e86'} invertido={invertido} bondis={[[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']],[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']]]}/> 
                 </div>
                 </div>
     </div>

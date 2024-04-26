@@ -1,12 +1,16 @@
 import Bondi from "./Bondi.js";
 
-export default function Fila({color,bondis}){
-    console.log({bondis})
+export default function Fila({color,bondis,invertido}){
+    console.log({bondis});
 
     const descripcionLineas = bondis.map((element,index) => {
-        return element[1].map(descripcion => {
-            return <div>{descripcion}</div>
-        })
+        let cont = 0;
+        if(cont==index){
+            return element[1].map(descripcion => {
+                return <div>{descripcion}</div>
+            })
+        }
+        cont++;
     })
 
     const lineas = bondis.map(linea => {
@@ -17,11 +21,11 @@ export default function Fila({color,bondis}){
                 <div className="descripcionLineas mt-1 mb-1">
                     {descripcionLineas}
                 </div>
-            </div>
+                </div>
     })
 
     return(<>
-        <div className="row" style={{borderRight: `${color} 2em solid`}}>
+        <div className="row" style={invertido ? {borderLeft: `${color} 2em solid`}  : {borderRight: `${color} 2em solid`}}>
         {lineas}
         </div>
         </>

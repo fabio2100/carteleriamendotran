@@ -2,12 +2,25 @@
   --main-red: #f00b0b;
 }
 
+body{
+  padding-bottom: 20px;
+}
+
 
 .main{
   width: 400px !important;
   margin: 2em !important;
   margin-bottom: 0 !important;
   border-left: 1em solid var(--main-red);
+  width: 40px;
+  margin: 2em;
+}
+
+.mainInvertido{
+  width: 400px !important;
+  margin: 2em !important;
+  margin-bottom: 0 !important;
+  border-right: 1em solid var(--main-red);
   width: 40px;
   margin: 2em;
 }
@@ -42,10 +55,6 @@
   color: white;
 }
 
-.filaBus{
-  border-right: 2em solid #b6a50f;
-  background-color: #c9c9c9;
-}
 
 .containerRows{
   background-color: #cfcece;
