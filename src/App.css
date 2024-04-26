@@ -43,6 +43,26 @@
 }
 
 .filaBus{
-  border-right: 2em solid #0c0e86;
+  border-right: 2em solid #b6a50f;
   background-color: #c9c9c9;
+}
+
+.containerRows{
+  background-color: #cfcece;
+}
+
+.numeroLinea{
+  background-color: #ffffff;
+  border: black 3px solid;
+  font-weight: 800;
+  font-size: 1.1em;
+  padding-top: .12em;
+  padding-bottom: .12em;
+  margin-top: .1em;
+}
+
+.descripcionLineas{
+  line-height: 0.9em;
+  font-size: .67em;
+  font-weight: 800;
 }

@@ -34,8 +34,10 @@ export default function Cartel(){
                 </div>  
             </div>
             <div className='row'>
-                <Fila color={7} bondis={[729,730,731,732]}/> 
-                <Fila color={4} bondis={[400]}/>
+                <div className="containerRows container">
+                <Fila color={'#b6a50f'} bondis={[[400,['TRAPICHE','DORREGO','lugar1','lugar2','lugar3']]]}/>
+                <Fila color={'#0c0e86'} bondis={[[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']],[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']]]}/> 
+                </div>
                 </div>
     </div>
     )
