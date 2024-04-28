@@ -75,3 +75,9 @@ body{
   font-size: .67em;
   font-weight: 800;
 }
+
+
+.fila{
+  border-bottom: #f00b0b 4px solid !important;
+}
+

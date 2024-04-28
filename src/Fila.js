@@ -25,7 +25,7 @@ export default function Fila({color,bondis,invertido}){
     })
 
     return(<>
-        <div className="row" style={invertido ? {borderLeft: `${color} 2em solid`}  : {borderRight: `${color} 2em solid`}}>
+        <div className="row fila" style={invertido ? {borderLeft: `${color} 2em solid`}  : {borderRight: `${color} 2em solid`}}>
         {lineas}
         </div>
         </>

@@ -1,19 +1,21 @@
+import { Button } from 'bootstrap';
 import './App.css';
 import Cartel from './Cartel';
+import { useState } from 'react';
 
 function App() {
-  return (<>
-  <div className="container">
-    <div className="row">
-      <div className='col-12 col-lg-6'>
-      <Cartel />
-      </div>
-      <div className='col-12 col-lg-6'>
-      <Cartel invertido={1} />
-      </div>
-    </div>
-    </div>
+  const [visible,setVisible] = useState(false);
 
+  const invertirVerticalidad = () =>{
+    setVisible(!visible)
+  }
+
+  return (<>
+
+    <button style={{marginTop:'2em',marginLeft:'2em'}} onClick={invertirVerticalidad}>Invertir verticalidad</button>
+     
+     {visible ? <Cartel /> :  <Cartel invertido={1} />}     
+     
     </>
   );
 }

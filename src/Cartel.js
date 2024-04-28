@@ -36,7 +36,8 @@ export default function Cartel({invertido}){
             <div className='row'>
                 <div className="containerRows container">
                 <Fila color={'#b6a50f'} invertido={invertido} bondis={[[400,['TRAPICHE','DORREGO','lugar1','lugar2','lugar3']]]}/>
-                <Fila color={'#0c0e86'} invertido={invertido} bondis={[[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']],[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']]]}/> 
+                <Fila color={'#0c0e86'} invertido={invertido} bondis={[[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']]]}/> 
+                <Fila color={'#0c0e86'} invertido={invertido} bondis={[[720,['LUJAN','CENTRO','Palmares','Casa de Gobierno','Panamericana']],[750,['LUJAN','MAIPU','Chacras de coria','San Martín']]]}/>          
                 </div>
                 </div>
     </div>
