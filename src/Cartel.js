@@ -1,5 +1,6 @@
 import { InfoOutlined } from "@mui/icons-material"
 import { DirectionsBus } from "@mui/icons-material"
+import AcUnitIcon from '@mui/icons-material/AcUnit';
 import Fila from "./Fila"
 
 export default function Cartel({invertido}){
@@ -10,11 +11,11 @@ export default function Cartel({invertido}){
                     <div className="row">
                         <div className="col logoSuperior">
                             <div className="container">
-                                <div className="row">LOGO</div>
-                                <div className="row">MENDOTRAN</div>
+                                <p className="text-center pt-1 mb-1 svg_icons"><AcUnitIcon /></p>
+                                <div className="text-center">MENDOTRAN</div>
                             </div>
                         </div>
-                        <div className="col logoSuperior"><DirectionsBus /> numeroparada</div>
+                        <div className="col logoSuperior nroParada mt-2"><DirectionsBus className="svg_icons"/> M5282 </div>
                     </div>
                 </div>
             </div>

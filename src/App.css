@@ -78,6 +78,15 @@ body{
 
 
 .fila{
-  border-bottom: #f00b0b 4px solid !important;
+  border-bottom: var(--main-red) 4px solid;
 }
 
+.svg_icons{
+  transform: scale(1.8);
+  font-weight: 800;
+}
+
+.nroParada{
+  font-weight: 700;
+  font-size: 25px;
+}
